@@ -31,16 +31,16 @@
     "Semi-truck": 7
   },
   "class_counter_dtr": {
-    "car": 11913,
-    "person": 5288,
+    "car": 11932,
+    "person": 5304,
     "traffic_sign": 582,
     "bicycle": 304,
-    "motorcycle": 206
+    "motorcycle": 205
   },
   "skip_counter": {
-    "skip_no_projection": 62117,
+    "skip_no_projection": 61406,
     "skip_label": 10227,
-    "skip_small_area": 4
+    "skip_small_area": 262
   },
   "per_seq_record_count": {
     "001": 16,
@@ -93,7 +93,7 @@
     "seed": 42,
     "instruction": "信号機、交通標識、車、人、自転車、バイクを分類し、CSV形式で出力してください。",
     "min_area_norm1000": 20.0,
-    "min_projected_points": 3,
+    "min_projected_points": 1,
     "max_objects_per_image": 30,
     "nms_iou": 0.85,
     "use_camera_used_filter": false,
