@@ -31,16 +31,19 @@
     "Semi-truck": 7
   },
   "class_counter_dtr": {
-    "car": 11932,
-    "person": 5304,
-    "traffic_sign": 582,
-    "bicycle": 304,
-    "motorcycle": 205
+    "car": 10302,
+    "person": 1561,
+    "traffic_sign": 253,
+    "motorcycle": 227,
+    "bicycle": 137
   },
   "skip_counter": {
-    "skip_no_projection": 61406,
+    "skip_no_projection": 35008,
     "skip_label": 10227,
-    "skip_small_area": 262
+    "skip_small_area_car": 9194,
+    "skip_small_area_person": 1731,
+    "skip_small_area_motorcycle": 49,
+    "skip_small_area_bicycle": 32
   },
   "per_seq_record_count": {
     "001": 16,
@@ -83,9 +86,17 @@
     "046": 16,
     "047": 16
   },
+  "min_area_by_class": {
+    "car": 500.0,
+    "person": 200.0,
+    "bicycle": 200.0,
+    "motorcycle": 200.0,
+    "traffic_sign": 30.0,
+    "traffic_light": 30.0
+  },
   "args": {
-    "pandaset_root": ".\\datasets\\pandaset",
-    "out_root": ".\\data\\automotive_vlm_pandaset",
+    "pandaset_root": ".\\\\datasets\\\\pandaset",
+    "out_root": ".\\\\data\\\\automotive_vlm_pandaset",
     "cameras": "front_camera",
     "sequences": "",
     "frame_stride": 5,
@@ -93,11 +104,14 @@
     "seed": 42,
     "instruction": "信号機、交通標識、車、人、自転車、バイクを分類し、CSV形式で出力してください。",
     "min_area_norm1000": 20.0,
-    "min_projected_points": 1,
-    "max_objects_per_image": 30,
+    "min_area_by_class": "car=500,person=200,bicycle=200,motorcycle=200,traffic_sign=30,traffic_light=30",
+    "min_projected_points": 3,
+    "max_objects_per_image": 20,
     "nms_iou": 0.85,
     "use_camera_used_filter": false,
     "split_by_sequence": false,
-    "dry_run": false
+    "dry_run": false,
+    "projection_filter_outliers": false,
+    "prefer_large_bbox_when_limit": true
   }
 }
