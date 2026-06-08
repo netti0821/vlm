@@ -31,19 +31,31 @@
     "Semi-truck": 7
   },
   "class_counter_dtr": {
-    "car": 10302,
-    "person": 1561,
-    "traffic_sign": 253,
-    "motorcycle": 227,
-    "bicycle": 137
+    "car": 9473,
+    "person": 2209,
+    "motorcycle": 295,
+    "traffic_sign": 250,
+    "bicycle": 173
   },
   "skip_counter": {
-    "skip_no_projection": 35008,
+    "skip_no_projection": 62117,
     "skip_label": 10227,
-    "skip_small_area_car": 9194,
-    "skip_small_area_person": 1731,
-    "skip_small_area_motorcycle": 49,
-    "skip_small_area_bicycle": 32
+    "skip_small_area_car": 6457,
+    "skip_small_area_person": 980,
+    "skip_small_area_motorcycle": 26,
+    "skip_small_area_bicycle": 19
+  },
+  "skip_label_counter_raw": {
+    "Temporary Construction Barriers": 4048,
+    "Cones": 2400,
+    "Pylons": 1216,
+    "Rolling Containers": 827,
+    "Tram / Subway": 583,
+    "Road Barriers": 496,
+    "Train": 304,
+    "Animals - Other": 170,
+    "Other Vehicle - Pedicab": 151,
+    "Emergency Vehicle": 32
   },
   "per_seq_record_count": {
     "001": 16,
@@ -111,7 +123,7 @@
     "use_camera_used_filter": false,
     "split_by_sequence": false,
     "dry_run": false,
-    "projection_filter_outliers": false,
+    "projection_filter_outliers": true,
     "prefer_large_bbox_when_limit": true
   }
 }
